@@ -23,7 +23,7 @@
     "@electron-toolkit/utils": "^2.0.0",
     "electron-updater": "^6.1.1",
     "ntcore-react": "github:CrispyBacon1999/ntcore-react",
-    "ntcore-ts-client": "^0.2.1"
+    "ntcore-ts-client": "2.0.0-beta.2"
   },
   "devDependencies": {
     "@electron-toolkit/eslint-config-ts": "^1.0.0",

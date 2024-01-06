@@ -9,7 +9,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     {import.meta.env.RENDERER_VITE_NT === "DEVELOPMENT" && <NTProvider uri="127.0.0.1" port={5810}>
       <App />
     </NTProvider>}
-    {import.meta.env.RENDERER_VITE_NT !== "DEVELOPMENT" && <NTProvider teamNumber={import.meta.env.RENDERER_VITE_NT}>
+    {import.meta.env.RENDERER_VITE_NT !== "DEVELOPMENT" && <NTProvider uri={`roborio-${import.meta.env.RENDERER_VITE_NT}-frc.local`}>
       <App />
     </NTProvider>}
   </React.StrictMode>,

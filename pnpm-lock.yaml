@@ -16,10 +16,10 @@ dependencies:
     version: 6.1.1
   ntcore-react:
     specifier: github:CrispyBacon1999/ntcore-react
-    version: 1.1.0
+    version: github.com/CrispyBacon1999/ntcore-react/c14e5c4fdc28bc48c0580cfac5e4b014ac46b355
   ntcore-ts-client:
-    specifier: ^0.2.1
-    version: 0.2.1
+    specifier: 2.0.0-beta.2
+    version: 2.0.0-beta.2
 
 devDependencies:
   '@electron-toolkit/eslint-config-ts':
@@ -2725,14 +2725,6 @@ packages:
     resolution: {integrity: sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==}
     dev: true
 
-  /isomorphic-ws@5.0.0(ws@8.12.0):
-    resolution: {integrity: sha512-muId7Zzn9ywDsyXgTIafTry2sV3nySZeUDe6YedVd1Hvuuep5AsIlqK+XefWpYTyJG5e503F2xIuT2lcU6rCSw==}
-    peerDependencies:
-      ws: '*'
-    dependencies:
-      ws: 8.12.0
-    dev: false
-
   /isomorphic-ws@5.0.0(ws@8.13.0):
     resolution: {integrity: sha512-muId7Zzn9ywDsyXgTIafTry2sV3nySZeUDe6YedVd1Hvuuep5AsIlqK+XefWpYTyJG5e503F2xIuT2lcU6rCSw==}
     peerDependencies:
@@ -2991,11 +2983,6 @@ packages:
     hasBin: true
     dev: true
 
-  /mock-socket@9.1.5:
-    resolution: {integrity: sha512-3DeNIcsQixWHHKk6NdoBhWI4t1VMj5/HzfnI1rE/pLl5qKx7+gd4DNA07ehTaZ6MoUU053si6Hd+YtiM/tQZfg==}
-    engines: {node: '>= 8'}
-    dev: false
-
   /mock-socket@9.2.1:
     resolution: {integrity: sha512-aw9F9T9G2zpGipLLhSNh6ZpgUyUl4frcVmRN08uE1NWPWg43Wx6+sGPDbQ7E5iFZZDJW5b5bypMeAEHqTbIFag==}
     engines: {node: '>= 8'}
@@ -3046,32 +3033,6 @@ packages:
     resolution: {integrity: sha512-DlL+XwOy3NxAQ8xuC0okPgK46iuVNAK01YN7RueYBqqFeGsBjV9XmCAzAdgt+667bCl5kPh9EqKKDwnaPG1I7A==}
     engines: {node: '>=10'}
 
-  /ntcore-react@1.1.0:
-    resolution: {integrity: sha512-Xljj9l6w9OaKXkVBP1wZhq/lFxNqneE13Zd8oTgSrNRFJaOi0BfDBFmv8su0IRA4GXVXytjXuwh0wjVH6pfiKA==}
-    dependencies:
-      ntcore-ts-client: 0.1.0-beta.0
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-    transitivePeerDependencies:
-      - bufferutil
-      - utf-8-validate
-    dev: false
-
-  /ntcore-ts-client@0.1.0-beta.0:
-    resolution: {integrity: sha512-Ul0jtO6HhY1ez4uny/A9zBGPrziewucbg8Ce0OtEJN9EV23XFVJAXIcsFSY9pojxvINa9zTPWIJshp09dQy50g==}
-    dependencies:
-      '@msgpack/msgpack': 2.8.0
-      isomorphic-ws: 5.0.0(ws@8.12.0)
-      mock-socket: 9.1.5
-      tslib: 2.4.1
-      uuid: 9.0.0
-      ws: 8.12.0
-      zod: 3.20.2
-    transitivePeerDependencies:
-      - bufferutil
-      - utf-8-validate
-    dev: false
-
   /ntcore-ts-client@0.2.1:
     resolution: {integrity: sha512-YrTe1cPEqG/VE2LoQr3dteadKb1I4vOCYA7T4IKrPYced1ngj2e07Ce6Jga5MTvrDrVnHdXhuRZF4iJBJQU5VQ==}
     dependencies:
@@ -3085,6 +3046,10 @@ packages:
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
+    dev: false
+
+  /ntcore-ts-client@2.0.0-beta.2:
+    resolution: {integrity: sha512-zPcvLSozYMnzeNCMZVUcsa45cg90vQHV1inE6WC3jy+CO5J7eGP3ZSsHd+rgAqlw3u7xk7jVlFRrJmrI6fEXZQ==}
     dev: false
 
   /object-assign@4.1.1:
@@ -3869,10 +3834,6 @@ packages:
     resolution: {integrity: sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==}
     dev: true
 
-  /tslib@2.4.1:
-    resolution: {integrity: sha512-tGyy4dAjRIEwI7BzsB0lynWgOpfqjUdq91XXAlIWD2OwKBH7oCl/GZG/HT4BOHrTlPMOASlMQ7veyTqpmRcrNA==}
-    dev: false
-
   /tslib@2.5.0:
     resolution: {integrity: sha512-336iVw3rtn2BUK7ORdIAHTyxHGRIHVReokCR3XjbckJMK7ms8FysBfhLR8IXnAgy7T0PTPNBWKiH514FOW/WSg==}
     dev: false
@@ -4117,19 +4078,6 @@ packages:
   /wrappy@1.0.2:
     resolution: {integrity: sha512-l4Sp/DRseor9wL6EvV2+TuQn63dMkPjZ/sp9XkghTEbV9KlPS1xUsZ3u7/IQO4wxtcFB4bgpQPRcR3QCvezPcQ==}
 
-  /ws@8.12.0:
-    resolution: {integrity: sha512-kU62emKIdKVeEIOIKVegvqpXMSTAMLJozpHZaJNDYqBjzlSYXQGviYwN1osDLJ9av68qHd4a2oSjd7yD4pacig==}
-    engines: {node: '>=10.0.0'}
-    peerDependencies:
-      bufferutil: ^4.0.1
-      utf-8-validate: '>=5.0.2'
-    peerDependenciesMeta:
-      bufferutil:
-        optional: true
-      utf-8-validate:
-        optional: true
-    dev: false
-
   /ws@8.13.0:
     resolution: {integrity: sha512-x9vcZYTrFPC7aSIbj7sRCYo7L/Xb8Iy+pW0ng0wt2vCJv7M9HOMy0UoN3rr+IFC7hb7vXoqS+P9ktyLLLhO+LA==}
     engines: {node: '>=10.0.0'}
@@ -4195,10 +4143,19 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /zod@3.20.2:
-    resolution: {integrity: sha512-1MzNQdAvO+54H+EaK5YpyEy0T+Ejo/7YLHS93G3RnYWh5gaotGHwGeN/ZO687qEDU2y4CdStQYXVHIgrUl5UVQ==}
-    dev: false
-
   /zod@3.21.4:
     resolution: {integrity: sha512-m46AKbrzKVzOzs/DZgVnG5H55N1sv1M8qZU3A8RIKbs3mrACDNeIOeilDymVb2HdmP8uwshOCF4uJ8uM9rCqJw==}
+    dev: false
+
+  github.com/CrispyBacon1999/ntcore-react/c14e5c4fdc28bc48c0580cfac5e4b014ac46b355:
+    resolution: {tarball: https://codeload.github.com/CrispyBacon1999/ntcore-react/tar.gz/c14e5c4fdc28bc48c0580cfac5e4b014ac46b355}
+    name: ntcore-react
+    version: 1.2.0
+    dependencies:
+      ntcore-ts-client: 0.2.1
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    transitivePeerDependencies:
+      - bufferutil
+      - utf-8-validate
     dev: false
